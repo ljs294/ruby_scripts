@@ -1,9 +1,10 @@
+# frozen_string_literal: true
+
 def bubble_sort(array)
   i = array.length - 2
   while i >= 0
-    for j in 0..i do
+    (0..i).each do |j|
       next unless array[j] > array[j + 1]
-
       temp = array[j + 1]
       array[j + 1] = array[j]
       array[j] = temp
